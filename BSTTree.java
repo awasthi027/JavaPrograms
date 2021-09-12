@@ -1,30 +1,9 @@
-public class HelloWorld {
+
+
+
+public class BSTTree {
     
-       public static void main(String []args){
-          System.out.println("Hello World");
-          BSTTree bst = new BSTTree();
-          bst.root = new BSTNode(2);
-          bst.add(7, bst.root);
-          bst.add(3, bst.root);
-          bst.add(6, bst.root);
-          bst.add(4, bst.root);
-          bst.add(6, bst.root);
-          bst.print(bst.root);
-        bst.print(bst.deleteNode(bst.root,6));
-            System.out.println("After delete");
-          bst.print(bst.root);
-           bst.print(bst.deleteNode(bst.root,6));
-            System.out.println("After delete");
-          bst.print(bst.root);
-       
-     }
-}
-
-
-
-class BSTTree {
-    
-     BSTNode root;
+     public BSTNode root;
      
     public void add(int data, BSTNode root) {
         BSTNode node = new  BSTNode(data);
@@ -98,20 +77,3 @@ class BSTTree {
 
 
 
-class BSTNode {
-    int data;
-    BSTNode left;
-    BSTNode right;
-    
-    BSTNode(int data) {
-        this.data = data;
-        this.left = null;
-        this.right = null;   
-    }
-    
-    BSTNode(int data,  BSTNode left,  BSTNode right) {
-        this.data = data;
-        this.left = left;
-        this.right = right;
-    }
-}
